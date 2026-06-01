@@ -6,317 +6,311 @@ import Icon from "@/components/ui/icon";
 const MFO_LIST = [
   {
     id: 1,
-    name: "МигКредит",
-    logo: "🏦",
-    tag: "ТОП выбор",
-    rate: "от 0.5% / день",
-    amount: "до 100 000 ₽",
-    term: "до 30 дней",
-    approval: "97%",
+    name: "MoneyMan",
+    shortName: "Money\nMan",
+    bg: "#1a3a6b",
+    textColor: "#fff",
+    tag: "Рекомендуем",
+    tagColor: "bg-green-100 text-green-700",
+    subtitle: "Первый займ под 0%",
+    sumMax: "до 30 000 ₽",
+    termMax: "до 21 дня",
+    decision: "от 1 минуты",
+    approval: "98%",
+    noRequirements: "Без справок и поручителей",
+    extra: "Первый займ 0%",
+    extraB: "Круглосуточно",
     rating: 4.8,
-    reviews: 1284,
-    features: ["Без залога", "Онлайн 24/7", "За 5 минут"],
-    color: "from-blue-900/40 to-blue-950/20",
+    reviews: 5,
+    features: ["Первый займ 0%", "Без справок", "24/7"],
   },
   {
     id: 2,
     name: "Займер",
-    logo: "💎",
-    tag: "Лучшая ставка",
-    rate: "от 0.3% / день",
-    amount: "до 50 000 ₽",
-    term: "до 60 дней",
+    shortName: "ЗАЙМЕР",
+    bg: "#2d2d2d",
+    textColor: "#fff",
+    tag: null,
+    subtitle: "Высокий шанс одобрения",
+    sumMax: "до 30 000 ₽",
+    termMax: "до 30 дней",
+    decision: "от 2 минут",
     approval: "95%",
-    rating: 4.7,
-    reviews: 987,
-    features: ["Первый займ 0%", "Продление срока", "Скидки постоянным"],
-    color: "from-emerald-900/40 to-emerald-950/20",
+    noRequirements: "Без звонков и проверок",
+    extra: "Моментально на карту",
+    extraB: "",
+    rating: 4.8,
+    reviews: 5,
+    features: ["95% одобрение", "Без звонков", "На карту"],
   },
   {
     id: 3,
-    name: "СберЗайм",
-    logo: "🏛️",
-    tag: "Надёжность",
-    rate: "от 0.6% / день",
-    amount: "до 200 000 ₽",
-    term: "до 90 дней",
-    approval: "92%",
-    rating: 4.9,
-    reviews: 2156,
-    features: ["Крупная сумма", "Долгий срок", "Партнёр Сбера"],
-    color: "from-indigo-900/40 to-indigo-950/20",
+    name: "Екапуста",
+    shortName: "е\nкапуста",
+    bg: "#ff6b35",
+    textColor: "#fff",
+    tag: null,
+    subtitle: "Быстро и просто",
+    sumMax: "до 50 000 ₽",
+    termMax: "до 21 дня",
+    decision: "от 5 минут",
+    approval: "94%",
+    noRequirements: "Без отказов и поручителей",
+    extra: "Онлайн 24/7",
+    extraB: "",
+    rating: 4.7,
+    reviews: 5,
+    features: ["Без отказов", "Онлайн 24/7", "До 50 000 ₽"],
   },
   {
     id: 4,
-    name: "CashDrive",
-    logo: "⚡",
-    tag: "Быстро",
-    rate: "от 0.8% / день",
-    amount: "до 30 000 ₽",
-    term: "до 21 дня",
-    approval: "99%",
-    rating: 4.5,
-    reviews: 643,
-    features: ["Одобрение за 2 мин", "На карту любого банка", "Без проверки КИ"],
-    color: "from-amber-900/30 to-amber-950/20",
+    name: "Miloan",
+    shortName: "MILOAN",
+    bg: "#1e7e4a",
+    textColor: "#fff",
+    tag: null,
+    subtitle: "Для новых клиентов",
+    sumMax: "до 100 000 ₽",
+    termMax: "до 24 недель",
+    decision: "от 15 минут",
+    approval: "92%",
+    noRequirements: "Большие суммы до 100 000 ₽",
+    extra: "Гибкий срок до 24 недель",
+    extraB: "Низкая ставка от 0,7%",
+    rating: 4.6,
+    reviews: 5,
+    features: ["До 100 000 ₽", "24 недели", "Низкая ставка"],
   },
   {
     id: 5,
-    name: "МонеДо",
-    logo: "🌟",
-    tag: "Для новых",
-    rate: "0% первый займ",
-    amount: "до 15 000 ₽",
-    term: "до 30 дней",
+    name: "Турбозайм",
+    shortName: "ТУРБО\nЗАЙМ",
+    bg: "#c0392b",
+    textColor: "#fff",
+    tag: null,
+    subtitle: "Надёжно и быстро",
+    sumMax: "до 16 000 ₽",
+    termMax: "до 30 дней",
+    decision: "от 10 минут",
     approval: "93%",
-    rating: 4.6,
-    reviews: 812,
-    features: ["Первый займ бесплатно", "Простая заявка", "Улучшение КИ"],
-    color: "from-purple-900/30 to-purple-950/20",
-  },
-  {
-    id: 6,
-    name: "КредитПлюс",
-    logo: "💼",
-    tag: "Большая сумма",
-    rate: "от 0.45% / день",
-    amount: "до 500 000 ₽",
-    term: "до 365 дней",
-    approval: "88%",
-    rating: 4.4,
-    reviews: 534,
-    features: ["До 500 тыс.", "Длинный срок", "Поручительство"],
-    color: "from-teal-900/30 to-teal-950/20",
+    noRequirements: "Простой процесс",
+    extra: "Без скрытых комиссий",
+    extraB: "Досрочное погашение",
+    rating: 4.5,
+    reviews: 5,
+    features: ["Простой процесс", "Без комиссий", "Досрочно"],
   },
 ];
 
-const REVIEWS = [
-  { id: 1, mfo: "МигКредит", author: "Антон С.", rating: 5, text: "Деньги пришли через 8 минут. Уже третий раз пользуюсь — ни разу проблем не было. Ставка честная, без скрытых комиссий.", date: "28 мая 2026" },
-  { id: 2, mfo: "Займер", author: "Марина Л.", rating: 5, text: "Первый займ взяла под 0% — очень удобно. Заявка простая, всё понятно написано. Буду рекомендовать подругам.", date: "25 мая 2026" },
-  { id: 3, mfo: "СберЗайм", author: "Дмитрий В.", rating: 5, text: "Серьёзная организация. Взял 150 000 рублей на 3 месяца под хорошую ставку. Всё прозрачно, менеджер ответил на все вопросы.", date: "20 мая 2026" },
-  { id: 4, mfo: "CashDrive", author: "Ольга Р.", rating: 4, text: "Очень быстро! Буквально за 2 минуты одобрили. Единственный минус — ставка чуть выше других, но скорость того стоит.", date: "18 мая 2026" },
-];
-
-const FAQ = [
-  { q: "Как выбрать МФО?", a: "Обращайте внимание на дневную процентную ставку, максимальную сумму и срок займа. Также важен рейтинг организации в ЦБ РФ. На нашем сайте все МФО проверены и лицензированы." },
-  { q: "Можно ли получить займ с плохой кредитной историей?", a: "Да, большинство МФО лояльны к кредитной истории. CashDrive и МигКредит рассматривают заявки даже при проблемах с КИ. Начните с небольшой суммы и своевременно погашайте — это улучшит историю." },
-  { q: "Сколько времени занимает одобрение?", a: "Большинство МФО из нашего каталога одобряют заявки за 2-15 минут. CashDrive — самый быстрый, до 2 минут. Деньги поступают на карту в течение 5-30 минут после подписания договора." },
-  { q: "Какие документы нужны?", a: "Как правило, нужен только паспорт гражданина РФ. Некоторые МФО дополнительно запрашивают СНИЛС или второй документ для крупных сумм. Никаких справок с работы или поручителей." },
-  { q: "Как погасить займ досрочно?", a: "Все МФО из нашего каталога разрешают досрочное погашение без штрафов. Вы платите только за фактические дни пользования деньгами. Это значительно сокращает итоговую переплату." },
+const FAQ_LIST = [
+  { q: "Кто может получить займ онлайн?", a: "Гражданин РФ от 18 лет с паспортом и телефоном. Официальное трудоустройство не обязательно. Каждая МФО устанавливает свои требования — уточняйте на сайте выбранной организации." },
+  { q: "Как быстро рассматривается заявка?", a: "Большинство МФО принимают решение автоматически за 1–15 минут. После одобрения деньги поступают на карту в течение нескольких минут." },
+  { q: "Нужны ли справки и поручители?", a: "Нет. Для получения займа достаточно паспорта гражданина РФ. Никаких справок о доходах, поручителей или залога не требуется." },
+  { q: "Как я получу деньги?", a: "Деньги переводятся на вашу банковскую карту любого банка, на расчётный счёт или выдаются наличными в офисе (зависит от МФО)." },
+  { q: "Что будет, если я не смогу вовремя вернуть займ?", a: "Свяжитесь с МФО заранее. Большинство организаций предлагают пролонгацию займа. Просрочка влечёт начисление пени и ухудшение кредитной истории." },
+  { q: "Безопасно ли оформлять займ онлайн?", a: "Да, если МФО внесена в реестр ЦБ РФ. Все организации в нашем каталоге имеют действующую лицензию. Данные передаются по защищённому соединению." },
+  { q: "Почему могут отказать в займе?", a: "Причины отказа: неверно указанные данные, плохая кредитная история, наличие открытых просроченных долгов или несоответствие требованиям МФО." },
 ];
 
 const STEPS = [
-  { num: "01", title: "Выберите МФО", desc: "Сравните условия всех организаций в каталоге, изучите рейтинги и отзывы реальных клиентов.", icon: "Search" },
-  { num: "02", title: "Подайте заявку", desc: "Перейдите на сайт МФО и заполните короткую анкету. Только паспорт — без справок и поручителей.", icon: "FileText" },
-  { num: "03", title: "Получите решение", desc: "Автоматическая система проверяет данные и выдаёт решение за 2-15 минут. Одобрение до 99%.", icon: "CheckCircle" },
-  { num: "04", title: "Получите деньги", desc: "После подписания договора деньги поступят на вашу карту в течение нескольких минут.", icon: "Banknote" },
+  { icon: "Search", title: "1. Выберите МФО", desc: "Изучите предложения и выберите подходящий вам займ" },
+  { icon: "FileText", title: "2. Заполните заявку", desc: "Заполните онлайн-заявку на сайте выбранной МФО" },
+  { icon: "Clock", title: "3. Дождитесь решения", desc: "Решение по вашей заявке придёт от 1 до 15 минут" },
+  { icon: "CreditCard", title: "4. Получите деньги", desc: "Деньги поступят на карту, счёт или наличными удобным способом" },
 ];
 
-// ─── COMPONENTS ──────────────────────────────────────────────────────────────
+const ADVANTAGES = [
+  { icon: "Zap", title: "Быстро", desc: "Решение за 5–15 минут" },
+  { icon: "UserCheck", title: "Доступно", desc: "Одобрение даже с плохой КИ" },
+  { icon: "Monitor", title: "Удобно", desc: "Оформление онлайн 24/7" },
+  { icon: "Shield", title: "Безопасно", desc: "Все данные под защитой" },
+];
 
-function StarRating({ rating, size = 16 }: { rating: number; size?: number }) {
+const SECURITY_ITEMS = [
+  { icon: "Lock", title: "SSL-шифрование", desc: "Все данные передаются по защищённому соединению" },
+  { icon: "ShieldOff", title: "Защита информации", desc: "Ваши персональные данные надёжно защищены" },
+  { icon: "EyeOff", title: "Не передаём данные", desc: "Мы никогда не передаём ваши данные третьим лицам" },
+  { icon: "BadgeCheck", title: "Только проверенные МФО", desc: "Все данные проверены только с надёжными МФО" },
+];
+
+const NAV_LINKS = ["Главная", "Все МФО", "Как это работает", "Вопросы", "Безопасность"] as const;
+type NavLink = typeof NAV_LINKS[number];
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+
+function Stars({ rating, max = 5 }: { rating: number; max?: number }) {
   return (
-    <div className="flex gap-0.5">
-      {[1, 2, 3, 4, 5].map((s) => (
-        <svg key={s} width={size} height={size} viewBox="0 0 24 24" fill={s <= Math.round(rating) ? "hsl(43, 90%, 55%)" : "hsl(220, 18%, 28%)"}>
+    <div className="flex gap-0.5 items-center">
+      {Array.from({ length: max }).map((_, i) => (
+        <svg key={i} width="13" height="13" viewBox="0 0 24 24"
+          fill={i < Math.round(rating) ? "#f5a623" : "#ddd"}>
           <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
         </svg>
+      ))}
+      <span className="text-xs text-gray-500 ml-1">{rating} из 5</span>
+    </div>
+  );
+}
+
+function LogoBox({ mfo }: { mfo: typeof MFO_LIST[0] }) {
+  return (
+    <div
+      className="logo-box text-center leading-tight"
+      style={{ background: mfo.bg, color: mfo.textColor }}
+    >
+      {mfo.shortName.split("\n").map((line, i) => (
+        <div key={i}>{line}</div>
       ))}
     </div>
   );
 }
 
-function MfoCard({ mfo, delay }: { mfo: typeof MFO_LIST[0]; delay: number }) {
-  return (
-    <div className={`card-hover animate-fade-up opacity-0 delay-${delay} relative bg-gradient-to-br ${mfo.color} border border-white/8 rounded-2xl p-6 flex flex-col gap-4`}>
-      {mfo.tag && (
-        <span className="badge-top absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full font-display tracking-wide">
-          {mfo.tag}
-        </span>
-      )}
-
-      <div className="flex items-center gap-3">
-        <div className="w-12 h-12 rounded-xl bg-white/8 flex items-center justify-center text-2xl border border-white/10">
-          {mfo.logo}
-        </div>
-        <div>
-          <h3 className="text-xl font-display font-semibold text-white tracking-wide">{mfo.name}</h3>
-          <div className="flex items-center gap-2 mt-0.5">
-            <StarRating rating={mfo.rating} size={13} />
-            <span className="text-xs text-muted-foreground">{mfo.rating} ({mfo.reviews.toLocaleString("ru")})</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-3 gap-3">
-        {[
-          { label: "Ставка", value: mfo.rate },
-          { label: "Сумма", value: mfo.amount },
-          { label: "Срок", value: mfo.term },
-        ].map((item) => (
-          <div key={item.label} className="bg-white/5 rounded-xl p-3 text-center border border-white/6">
-            <div className="text-xs text-muted-foreground mb-1">{item.label}</div>
-            <div className="text-sm font-semibold text-white leading-tight">{item.value}</div>
-          </div>
-        ))}
-      </div>
-
-      <div className="flex flex-wrap gap-2">
-        {mfo.features.map((f) => (
-          <span key={f} className="text-xs bg-white/6 border border-white/8 text-secondary-foreground px-2.5 py-1 rounded-full">
-            {f}
-          </span>
-        ))}
-      </div>
-
-      <div className="flex items-center justify-between mt-auto pt-2 border-t border-white/8">
-        <span className="text-xs text-muted-foreground">
-          Одобрение <span className="text-green-400 font-semibold">{mfo.approval}</span>
-        </span>
-        <button className="gold-gradient text-[hsl(220,25%,7%)] font-semibold text-sm px-5 py-2 rounded-lg hover:opacity-90 transition-opacity font-display tracking-wide">
-          Получить займ
-        </button>
-      </div>
-    </div>
-  );
-}
-
-// ─── SECTIONS ─────────────────────────────────────────────────────────────────
-
-const SECTIONS = ["Главная", "Все МФО", "Как работает", "Вопросы", "Безопасность"] as const;
-type Section = typeof SECTIONS[number];
+// ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 export default function Index() {
-  const [activeSection, setActiveSection] = useState<Section>("Главная");
+  const [activeNav, setActiveNav] = useState<NavLink>("Главная");
+  const [activeFilter, setActiveFilter] = useState("Все МФО");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  const scrollTo = (section: Section) => {
-    setActiveSection(section);
-    setMobileMenu(false);
+  const scrollTo = (section: NavLink) => {
+    setActiveNav(section);
+    setMobileOpen(false);
     const el = document.getElementById(section);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  const filters = ["Все МФО", "Новым клиентам", "Большие суммы", "На карту", "Быстрое решение"];
+
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* ── NAVBAR ── */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-xl border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-1">
-            <span className="text-2xl font-display font-bold gold-text tracking-wider">ФИНАНС</span>
-            <span className="text-2xl font-display font-light text-white/70 tracking-wider">ПРО</span>
+    <div className="min-h-screen bg-[#f7f8fa] text-gray-800" style={{ fontFamily: "'Golos Text', Roboto, sans-serif" }}>
+
+      {/* ══ HEADER ══ */}
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollTo("Главная")}>
+            <div className="w-7 h-7 rounded-full bg-green-600 flex items-center justify-center">
+              <Icon name="Check" size={14} className="text-white" />
+            </div>
+            <div>
+              <div className="font-bold text-sm leading-tight text-gray-800">Займы онлайн</div>
+              <div className="text-[10px] text-gray-500 leading-tight">Подбор МФО</div>
+            </div>
           </div>
 
-          <nav className="hidden md:flex items-center gap-8">
-            {SECTIONS.map((s) => (
+          {/* Desktop nav */}
+          <nav className="hidden md:flex items-center gap-6">
+            {NAV_LINKS.map((link) => (
               <button
-                key={s}
-                onClick={() => scrollTo(s)}
-                className={`nav-link text-sm font-medium tracking-wide transition-colors ${
-                  activeSection === s ? "text-[hsl(43,90%,55%)] active" : "text-muted-foreground hover:text-white"
+                key={link}
+                onClick={() => scrollTo(link)}
+                className={`text-sm transition-colors pb-0.5 border-b-2 ${
+                  activeNav === link
+                    ? "text-green-700 border-green-600 font-semibold"
+                    : "text-gray-600 border-transparent hover:text-green-700"
                 }`}
               >
-                {s}
+                {link}
               </button>
             ))}
           </nav>
 
-          <button className="hidden md:block gold-gradient text-[hsl(220,25%,7%)] font-semibold text-sm px-5 py-2 rounded-lg font-display tracking-wide hover:opacity-90 transition-opacity">
-            Подобрать займ
-          </button>
-
-          <button className="md:hidden text-muted-foreground" onClick={() => setMobileMenu(!mobileMenu)}>
-            <Icon name={mobileMenu ? "X" : "Menu"} size={24} />
+          <button className="md:hidden text-gray-500" onClick={() => setMobileOpen(!mobileOpen)}>
+            <Icon name={mobileOpen ? "X" : "Menu"} size={22} />
           </button>
         </div>
-
-        {mobileMenu && (
-          <div className="md:hidden bg-background/95 border-t border-border px-6 py-4 flex flex-col gap-4">
-            {SECTIONS.map((s) => (
-              <button
-                key={s}
-                onClick={() => scrollTo(s)}
-                className={`text-left text-sm font-medium py-1 ${activeSection === s ? "gold-text" : "text-muted-foreground"}`}
-              >
-                {s}
+        {mobileOpen && (
+          <div className="md:hidden bg-white border-t border-gray-100 px-4 py-3 flex flex-col gap-3">
+            {NAV_LINKS.map((link) => (
+              <button key={link} onClick={() => scrollTo(link)}
+                className={`text-left text-sm py-1 ${activeNav === link ? "text-green-700 font-semibold" : "text-gray-600"}`}>
+                {link}
               </button>
             ))}
           </div>
         )}
       </header>
 
-      {/* ── HERO ── */}
-      <section id="Главная" className="hero-bg relative pt-32 pb-24 overflow-hidden">
-        <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/6 border border-white/10 rounded-full px-4 py-2 mb-6 animate-fade-up opacity-0">
-              <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-sm text-muted-foreground">Все МФО проверены ЦБ РФ</span>
-            </div>
-
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6 animate-fade-up opacity-0 delay-1">
-              ЗАЙМ ДО{" "}
-              <span className="gold-text">500 000 ₽</span>{" "}
-              ЗА 5 МИНУТ
-            </h1>
-
-            <p className="text-lg text-muted-foreground leading-relaxed mb-10 animate-fade-up opacity-0 delay-2 max-w-xl">
-              Сравните условия от ведущих МФО России. Только лицензированные организации, реальные отзывы, прозрачные ставки.
-            </p>
-
-            <div className="flex flex-wrap gap-4 animate-fade-up opacity-0 delay-3">
+      {/* ══ HERO ══ */}
+      <section id="Главная" className="bg-white border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 py-10 md:py-14">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-3">
+                Где взять займ<br />
+                <span className="text-green-600">онлайн</span> в 2026 году
+              </h1>
+              <p className="text-gray-600 mb-6 text-sm leading-relaxed">
+                Мы подобрали для вас надёжные МФО с высоким шансом одобрения.<br />
+                Оформление за 5–10 минут. Деньги на карту, счёт или наличными.
+              </p>
+              <div className="flex flex-wrap gap-4 mb-6">
+                {[
+                  { icon: "Zap", text: "Быстро", sub: "Решение за 5 минут" },
+                  { icon: "Shield", text: "Надёжно", sub: "Проверенные МФО" },
+                  { icon: "CreditCard", text: "Удобно", sub: "На карту 24/7" },
+                ].map((item) => (
+                  <div key={item.text} className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-green-50 border border-green-100 flex items-center justify-center">
+                      <Icon name={item.icon} size={15} className="text-green-600" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-semibold text-gray-800">{item.text}</div>
+                      <div className="text-[11px] text-gray-500">{item.sub}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
               <button
                 onClick={() => scrollTo("Все МФО")}
-                className="gold-gradient text-[hsl(220,25%,7%)] font-bold text-base px-8 py-3.5 rounded-xl font-display tracking-wide hover:opacity-90 transition-all hover:scale-105 shadow-lg shadow-amber-500/20"
+                className="btn-green px-7 py-3 text-sm rounded-lg"
               >
-                Смотреть все предложения
-              </button>
-              <button
-                onClick={() => scrollTo("Как работает")}
-                className="border border-white/20 bg-white/5 text-white font-semibold text-base px-8 py-3.5 rounded-xl font-display tracking-wide hover:bg-white/10 transition-all"
-              >
-                Как это работает
+                Подобрать займ →
               </button>
             </div>
-          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 animate-fade-up opacity-0 delay-4">
-            {[
-              { value: "47+", label: "МФО в каталоге" },
-              { value: "99%", label: "Одобряемость" },
-              { value: "2 мин", label: "Среднее решение" },
-              { value: "150K+", label: "Клиентов доверяют" },
-            ].map((stat) => (
-              <div key={stat.label} className="bg-white/4 border border-white/8 rounded-2xl p-5 text-center">
-                <div className="text-3xl font-display font-bold gold-text mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+            {/* Hero card mockup */}
+            <div className="hidden md:flex justify-center">
+              <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 w-64">
+                <div className="text-xs text-gray-500 mb-1">Сумма займа</div>
+                <div className="text-2xl font-bold text-gray-900 mb-3">30 000 ₽</div>
+                <div className="text-xs text-gray-500 mb-1">Срок займа</div>
+                <div className="text-lg font-semibold text-gray-800 mb-4">15 дней</div>
+                <div className="w-full bg-gray-100 rounded-full h-2 mb-5">
+                  <div className="bg-green-500 h-2 rounded-full" style={{ width: "60%" }} />
+                </div>
+                <button className="btn-green w-full py-2.5 text-sm rounded-lg">
+                  Получить деньги
+                </button>
+                <div className="mt-3 flex items-center gap-2 text-[11px] text-gray-400">
+                  <Icon name="ShieldCheck" size={12} className="text-green-500" />
+                  Безопасное оформление
+                </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── ВСЕ МФО ── */}
-      <section id="Все МФО" className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
-            <div>
-              <p className="text-[hsl(43,90%,55%)] text-sm font-semibold uppercase tracking-widest mb-2 font-display">Каталог</p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-white">ВСЕ ПРЕДЛОЖЕНИЯ</h2>
-            </div>
-            <p className="text-muted-foreground text-sm max-w-sm">Отсортировано по рейтингу. Обновляется ежедневно.</p>
+      {/* ══ MFO CATALOG ══ */}
+      <section id="Все МФО" className="py-10 bg-[#f7f8fa]">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 mb-1">Лучшие предложения МФО</h2>
+            <p className="text-sm text-gray-500">Выберите подходящий займ и оформите онлайн</p>
           </div>
 
-          <div className="flex flex-wrap gap-2 mb-8">
-            {["Все", "Первый займ 0%", "Без проверки КИ", "Крупная сумма", "Быстрое одобрение"].map((f) => (
+          {/* Filters */}
+          <div className="flex flex-wrap gap-2 mb-5">
+            {filters.map((f) => (
               <button
                 key={f}
-                className={`text-sm px-4 py-2 rounded-lg border transition-all font-medium ${
-                  f === "Все"
-                    ? "gold-gradient text-[hsl(220,25%,7%)] border-transparent"
-                    : "border-border bg-muted/50 text-muted-foreground hover:border-white/20 hover:text-white"
+                onClick={() => setActiveFilter(f)}
+                className={`text-xs px-4 py-1.5 rounded-full border transition-all ${
+                  activeFilter === f
+                    ? "bg-green-600 text-white border-green-600"
+                    : "bg-white text-gray-600 border-gray-200 hover:border-green-400 hover:text-green-700"
                 }`}
               >
                 {f}
@@ -324,200 +318,349 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {MFO_LIST.map((mfo, i) => (
-              <MfoCard key={mfo.id} mfo={mfo} delay={Math.min(i + 1, 5)} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider mx-6" />
-
-      {/* ── КАК РАБОТАЕТ ── */}
-      <section id="Как работает" className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-[hsl(43,90%,55%)] text-sm font-semibold uppercase tracking-widest mb-2 font-display">Инструкция</p>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">КАК ЭТО РАБОТАЕТ</h2>
-            <p className="text-muted-foreground max-w-lg mx-auto">Получить займ онлайн — быстро и просто. Следуйте четырём шагам.</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {STEPS.map((step, i) => (
-              <div key={step.num} className={`animate-fade-up opacity-0 delay-${i + 1} relative bg-muted/50 border border-border rounded-2xl p-6 hover:border-white/20 transition-all`}>
-                <div className="text-5xl font-display font-bold text-white/6 absolute top-4 right-4">{step.num}</div>
-                <div className="w-12 h-12 rounded-xl bg-white/6 border border-white/10 flex items-center justify-center mb-5">
-                  <Icon name={step.icon} fallback="Circle" size={22} className="text-[hsl(43,90%,55%)]" />
-                </div>
-                <h3 className="text-lg font-display font-semibold text-white mb-2 tracking-wide">{step.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider mx-6" />
-
-      {/* ── ОТЗЫВЫ ── */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <p className="text-[hsl(43,90%,55%)] text-sm font-semibold uppercase tracking-widest mb-2 font-display">Клиенты</p>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">РЕАЛЬНЫЕ ОТЗЫВЫ</h2>
-            <p className="text-muted-foreground">Отзывы проверены и подтверждены</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {REVIEWS.map((rev, i) => (
-              <div key={rev.id} className={`animate-fade-up opacity-0 delay-${i + 1} bg-muted/40 border border-border rounded-2xl p-5 hover:border-white/15 transition-all`}>
-                <div className="flex items-center justify-between mb-3">
-                  <StarRating rating={rev.rating} size={14} />
-                  <span className="text-xs text-muted-foreground font-semibold border border-border px-2 py-0.5 rounded-full">{rev.mfo}</span>
-                </div>
-                <p className="text-sm text-secondary-foreground leading-relaxed mb-4">"{rev.text}"</p>
-                <div className="flex items-center justify-between pt-3 border-t border-border">
-                  <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold text-white">
-                      {rev.author[0]}
-                    </div>
-                    <span className="text-xs font-semibold text-white">{rev.author}</span>
-                  </div>
-                  <span className="text-xs text-muted-foreground">{rev.date}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <button className="border border-border bg-muted/30 text-muted-foreground hover:text-white hover:border-white/20 transition-all text-sm font-medium px-6 py-2.5 rounded-lg">
-              Загрузить ещё отзывы
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider mx-6" />
-
-      {/* ── ВОПРОСЫ ── */}
-      <section id="Вопросы" className="py-24 bg-background">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-[hsl(43,90%,55%)] text-sm font-semibold uppercase tracking-widest mb-2 font-display">FAQ</p>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">ЧАСТЫЕ ВОПРОСЫ</h2>
-          </div>
-
+          {/* MFO cards */}
           <div className="flex flex-col gap-3">
-            {FAQ.map((item, i) => (
-              <div key={i} className="border border-border rounded-2xl overflow-hidden bg-muted/30 hover:border-white/15 transition-colors">
-                <button
-                  className="w-full flex items-center justify-between p-5 text-left"
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                >
-                  <span className="font-semibold text-white pr-4 font-display tracking-wide">{item.q}</span>
-                  <Icon
-                    name="ChevronDown"
-                    size={18}
-                    className={`text-muted-foreground shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-180 text-[hsl(43,90%,55%)]" : ""}`}
-                  />
-                </button>
-                {openFaq === i && (
-                  <div className="px-5 pb-5 text-sm text-muted-foreground leading-relaxed border-t border-border pt-4">
-                    {item.a}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider mx-6" />
-
-      {/* ── БЕЗОПАСНОСТЬ ── */}
-      <section id="Безопасность" className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-[hsl(43,90%,55%)] text-sm font-semibold uppercase tracking-widest mb-2 font-display">Защита</p>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">ВАША БЕЗОПАСНОСТЬ</h2>
-            <p className="text-muted-foreground max-w-lg mx-auto">Мы работаем только с легальными МФО, внесёнными в реестр ЦБ РФ</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {[
-              { icon: "ShieldCheck", title: "Реестр ЦБ РФ", desc: "Все организации каталога имеют действующую лицензию Банка России. Проверяем статус ежемесячно." },
-              { icon: "Lock", title: "Защита данных", desc: "Ваши личные данные передаются только в выбранную МФО по зашифрованному каналу SSL/TLS." },
-              { icon: "Eye", title: "Прозрачные условия", desc: "Мы публикуем полную стоимость займа (ПСК), включая все комиссии. Никаких скрытых платежей." },
-              { icon: "Award", title: "Независимый рейтинг", desc: "Рейтинги формируются на основе реальных отзывов клиентов и объективных финансовых показателей." },
-              { icon: "Scale", title: "Правовая защита", desc: "Все МФО работают в рамках 151-ФЗ. Максимальная ставка ограничена законом — не более 0,8% в день." },
-              { icon: "PhoneCall", title: "Поддержка 24/7", desc: "Если у вас возникли вопросы или проблемы — наша служба поддержки работает круглосуточно." },
-            ].map((item, i) => (
-              <div key={item.title} className={`animate-fade-up opacity-0 delay-${i + 1} bg-muted/40 border border-border rounded-2xl p-6 hover:border-white/15 transition-all`}>
-                <div className="w-11 h-11 rounded-xl bg-white/6 border border-white/10 flex items-center justify-center mb-4">
-                  <Icon name={item.icon} fallback="Circle" size={20} className="text-[hsl(43,90%,55%)]" />
-                </div>
-                <h3 className="font-display font-semibold text-white mb-2 tracking-wide">{item.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA Banner */}
-          <div className="relative bg-gradient-to-r from-amber-900/30 via-amber-800/20 to-amber-900/30 border border-amber-700/30 rounded-3xl p-8 md:p-12 text-center overflow-hidden">
-            <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" />
-            <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">ГОТОВЫ ПОДОБРАТЬ ЗАЙМ?</h3>
-              <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-                Выберите нужную сумму — мы покажем лучшие предложения именно для вас
-              </p>
-              <div className="flex flex-wrap justify-center gap-3 mb-6">
-                {["10 000 ₽", "30 000 ₽", "50 000 ₽", "100 000 ₽"].map((sum) => (
-                  <button
-                    key={sum}
-                    className="border border-amber-700/40 bg-amber-900/20 text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-amber-800/30 transition-all font-display tracking-wide"
-                  >
-                    {sum}
-                  </button>
-                ))}
-              </div>
-              <button
-                onClick={() => scrollTo("Все МФО")}
-                className="gold-gradient text-[hsl(220,25%,7%)] font-bold text-base px-10 py-4 rounded-xl font-display tracking-wide hover:opacity-90 transition-all hover:scale-105 shadow-xl shadow-amber-500/25"
+            {MFO_LIST.map((mfo) => (
+              <div
+                key={mfo.id}
+                className="mfo-row bg-white rounded-xl border border-gray-200 p-4 md:p-5"
               >
-                Подобрать лучшее предложение
-              </button>
+                {/* Mobile layout */}
+                <div className="flex items-start gap-3 md:hidden">
+                  <LogoBox mfo={mfo} />
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                      <span className="font-bold text-gray-900">{mfo.name}</span>
+                      {mfo.tag && (
+                        <span className="text-[10px] bg-green-100 text-green-700 font-semibold px-2 py-0.5 rounded">
+                          {mfo.tag}
+                        </span>
+                      )}
+                    </div>
+                    <div className="text-xs text-gray-500 mb-2">{mfo.subtitle}</div>
+                    <Stars rating={mfo.rating} />
+                    <div className="grid grid-cols-3 gap-2 mt-3 mb-3">
+                      <div>
+                        <div className="text-[10px] text-gray-400">Сумма</div>
+                        <div className="text-xs font-semibold">{mfo.sumMax}</div>
+                      </div>
+                      <div>
+                        <div className="text-[10px] text-gray-400">Срок</div>
+                        <div className="text-xs font-semibold">{mfo.termMax}</div>
+                      </div>
+                      <div>
+                        <div className="text-[10px] text-gray-400">Решение</div>
+                        <div className="text-xs font-semibold">{mfo.decision}</div>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <button className="btn-green flex-1 py-2 text-xs rounded-lg">
+                        Получить деньги
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop layout */}
+                <div className="hidden md:flex items-center gap-4">
+                  {/* Logo */}
+                  <LogoBox mfo={mfo} />
+
+                  {/* Name + rating */}
+                  <div className="w-40 flex-shrink-0">
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                      <span className="font-bold text-gray-900 text-sm">{mfo.name}</span>
+                      {mfo.tag && (
+                        <span className="text-[10px] bg-green-100 text-green-700 font-semibold px-2 py-0.5 rounded">
+                          {mfo.tag}
+                        </span>
+                      )}
+                    </div>
+                    <div className="text-[11px] text-gray-500 mb-1">{mfo.subtitle}</div>
+                    <Stars rating={mfo.rating} />
+                  </div>
+
+                  {/* Params */}
+                  <div className="flex flex-1 gap-6 items-center">
+                    <div className="text-center">
+                      <div className="text-[11px] text-gray-400 mb-0.5">Сумма займа</div>
+                      <div className="text-sm font-bold text-gray-900">{mfo.sumMax}</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-[11px] text-gray-400 mb-0.5">Срок займа</div>
+                      <div className="text-sm font-bold text-gray-900">{mfo.termMax}</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-[11px] text-gray-400 mb-0.5">Решение</div>
+                      <div className="text-sm font-bold text-gray-900">{mfo.decision}</div>
+                    </div>
+                    <div className="flex-1 text-xs text-gray-500 space-y-0.5">
+                      <div className="flex items-center gap-1">
+                        <Icon name="Check" size={11} className="text-green-600 flex-shrink-0" />
+                        {mfo.noRequirements}
+                      </div>
+                      {mfo.extra && (
+                        <div className="flex items-center gap-1">
+                          <Icon name="Check" size={11} className="text-green-600 flex-shrink-0" />
+                          {mfo.extra}
+                        </div>
+                      )}
+                      {mfo.extraB && (
+                        <div className="flex items-center gap-1">
+                          <Icon name="Check" size={11} className="text-green-600 flex-shrink-0" />
+                          {mfo.extraB}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* CTA */}
+                  <div className="flex flex-col items-end gap-2 flex-shrink-0">
+                    <button className="btn-green px-6 py-2.5 text-sm rounded-lg whitespace-nowrap">
+                      Получить деньги →
+                    </button>
+                    <button className="text-xs text-green-600 hover:underline">
+                      Подробнее о МФО
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Tip block */}
+          <div className="mt-4 bg-white border border-gray-200 rounded-xl p-4 flex gap-3 items-start">
+            <div className="w-8 h-8 rounded-full bg-green-50 border border-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Icon name="Lightbulb" size={15} className="text-green-600" />
+            </div>
+            <div>
+              <span className="text-sm font-semibold text-gray-800">Совет: </span>
+              <span className="text-sm text-gray-600">
+                Если вам отказали в одном сервисе — не переживайте! Попробуйте другие варианты из нашего списка.
+                Одобрение в каждой МФО принимается индивидуально.
+              </span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── FOOTER ── */}
-      <footer className="border-t border-border bg-muted/20 py-10">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <div className="flex items-center gap-1 mb-2">
-                <span className="text-xl font-display font-bold gold-text tracking-wider">ФИНАНС</span>
-                <span className="text-xl font-display font-light text-white/60 tracking-wider">ПРО</span>
-              </div>
-              <p className="text-xs text-muted-foreground max-w-xs leading-relaxed">
-                Информационный сайт. Не является финансовой организацией. Все МФО имеют лицензию ЦБ РФ.
-              </p>
-            </div>
+      {/* ══ HOW IT WORKS ══ */}
+      <section id="Как это работает" className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Как это работает?</h2>
+            <p className="text-sm text-gray-500">Оформить займ онлайн — это просто и быстро</p>
+          </div>
 
-            <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
-              {SECTIONS.map((s) => (
-                <button key={s} onClick={() => scrollTo(s)} className="hover:text-white transition-colors">
-                  {s}
-                </button>
+          {/* Steps */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+            {STEPS.map((step, i) => (
+              <div key={step.title} className="text-center">
+                <div className="step-num mx-auto mb-3">
+                  <Icon name={step.icon} size={22} className="text-green-600" />
+                </div>
+                {i < STEPS.length - 1 && (
+                  <div className="hidden md:block absolute" />
+                )}
+                <div className="text-sm font-semibold text-gray-800 mb-1">{step.title}</div>
+                <div className="text-xs text-gray-500 leading-relaxed">{step.desc}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Advantages */}
+          <div className="bg-gray-50 rounded-xl p-6">
+            <div className="text-sm font-semibold text-gray-700 mb-4 text-center">Преимущества онлайн-займов</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {ADVANTAGES.map((a) => (
+                <div key={a.title} className="bg-green-50 rounded-lg p-4 flex items-start gap-3">
+                  <div className="w-9 h-9 rounded-lg bg-white border border-green-100 flex items-center justify-center flex-shrink-0">
+                    <Icon name={a.icon} size={17} className="text-green-600" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-semibold text-gray-800">{a.title}</div>
+                    <div className="text-[11px] text-gray-500 mt-0.5">{a.desc}</div>
+                  </div>
+                </div>
               ))}
             </div>
+          </div>
 
-            <div className="text-xs text-muted-foreground text-center md:text-right">
-              <div>© 2026 ФинансПро</div>
-              <div className="mt-1">Займы от 0% до 0.8% в день</div>
+          {/* Important note */}
+          <div className="important-block mt-5 flex gap-3 items-start">
+            <Icon name="Info" size={16} className="text-green-600 flex-shrink-0 mt-0.5" />
+            <span className="text-sm text-gray-600">
+              Мы не выдаём займы и не являемся кредитной организацией. Все решения принимаются МФО.
+              Перед оформлением займа внимательно ознакомьтесь с условиями договора.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ FAQ ══ */}
+      <section id="Вопросы" className="py-12 bg-[#f7f8fa] border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* FAQ list */}
+            <div className="md:col-span-2">
+              <h2 className="text-2xl font-bold text-gray-900 mb-1">Вопросы и ответы</h2>
+              <p className="text-sm text-gray-500 mb-6">Ответы на частые вопросы о займах онлайн</p>
+
+              <div className="flex flex-col gap-2">
+                {FAQ_LIST.map((item, i) => (
+                  <div key={i} className="faq-item">
+                    <button
+                      className="w-full flex items-center justify-between px-4 py-3.5 text-left"
+                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                    >
+                      <span className="text-sm font-medium text-gray-800 pr-4">{item.q}</span>
+                      <Icon
+                        name={openFaq === i ? "Minus" : "Plus"}
+                        size={16}
+                        className={`flex-shrink-0 transition-colors ${openFaq === i ? "text-green-600" : "text-gray-400"}`}
+                      />
+                    </button>
+                    {openFaq === i && (
+                      <div className="px-4 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
+                        {item.a}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
+
+            {/* Side: important */}
+            <div>
+              <div className="bg-white rounded-xl border border-gray-200 p-5">
+                <div className="flex items-center gap-2 mb-4">
+                  <Icon name="Info" size={16} className="text-green-600" />
+                  <span className="font-semibold text-gray-800 text-sm">Важно знать</span>
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    "Все займы предоставляются лицензированными МФО",
+                    "Мы не выдаём займы и не являемся кредитной организацией",
+                    "Решение зависит только от МФО",
+                    "Перед оформлением внимательно изучите условия договора",
+                  ].map((text, i) => (
+                    <li key={i} className="flex gap-2 text-xs text-gray-600 leading-relaxed">
+                      <Icon name="CheckCircle" size={13} className="text-green-500 flex-shrink-0 mt-0.5" />
+                      {text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-4 bg-green-50 rounded-xl border border-green-100 p-5">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="HeadphonesIcon" size={16} className="text-green-600" fallback="Phone" />
+                  <span className="font-semibold text-gray-800 text-sm">Не нашли ответ?</span>
+                </div>
+                <p className="text-xs text-gray-600 mb-3">Свяжитесь с нашей поддержкой, мы поможем!</p>
+                <div className="text-xs text-green-700 font-medium">support@zaymy-online.ru</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ SECURITY ══ */}
+      <section id="Безопасность" className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Безопасность ваших данных</h2>
+            <p className="text-sm text-gray-500">Мы заботимся о вашей конфиденциальности</p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            {SECURITY_ITEMS.map((item) => (
+              <div key={item.title} className="security-card text-center">
+                <div className="w-12 h-12 rounded-full bg-green-50 border border-green-100 flex items-center justify-center mx-auto mb-3">
+                  <Icon name={item.icon} size={20} className="text-green-600" />
+                </div>
+                <div className="text-sm font-semibold text-gray-800 mb-1">{item.title}</div>
+                <div className="text-xs text-gray-500 leading-relaxed">{item.desc}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Mission block */}
+          <div className="bg-gray-50 rounded-xl p-6 text-center border border-gray-100">
+            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+              <Icon name="Target" size={22} className="text-green-600" />
+            </div>
+            <h3 className="font-bold text-gray-900 mb-2">Наша миссия</h3>
+            <p className="text-sm text-gray-600 max-w-lg mx-auto leading-relaxed">
+              Мы помогаем людям находить надёжные финансовые решения быстро, безопасно и удобно.
+              Ваше доверие — наш приоритет.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ FOOTER ══ */}
+      <footer className="bg-white border-t border-gray-200 py-8">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+            {/* Brand */}
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-6 h-6 rounded-full bg-green-600 flex items-center justify-center">
+                  <Icon name="Check" size={12} className="text-white" />
+                </div>
+                <div>
+                  <div className="font-bold text-xs text-gray-800">Займы онлайн</div>
+                  <div className="text-[10px] text-gray-500">Подбор МФО</div>
+                </div>
+              </div>
+              <p className="text-[11px] text-gray-500 leading-relaxed">
+                Информационный сайт. Не является финансовой организацией.
+              </p>
+            </div>
+
+            {/* Navigation */}
+            <div>
+              <div className="text-xs font-semibold text-gray-700 mb-3">Навигация</div>
+              <ul className="space-y-2">
+                {NAV_LINKS.map((link) => (
+                  <li key={link}>
+                    <button onClick={() => scrollTo(link)}
+                      className="text-xs text-gray-500 hover:text-green-700 transition-colors">
+                      {link}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Info */}
+            <div>
+              <div className="text-xs font-semibold text-gray-700 mb-3">Информация</div>
+              <ul className="space-y-2 text-xs text-gray-500">
+                <li>О нас</li>
+                <li>Политика конфиденциальности</li>
+                <li>Пользовательское соглашение</li>
+                <li>Контакты</li>
+              </ul>
+            </div>
+
+            {/* Security */}
+            <div>
+              <div className="text-xs font-semibold text-gray-700 mb-3">Безопасность</div>
+              <div className="flex items-start gap-2">
+                <div className="w-10 h-10 rounded-lg bg-green-50 border border-green-100 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Shield" size={18} className="text-green-600" />
+                </div>
+                <div className="text-[11px] text-gray-500 leading-relaxed">
+                  Безопасное SSL-шифрование
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-100 pt-4 text-center text-xs text-gray-400">
+            © 2026 Займы онлайн. Все права защищены.
           </div>
         </div>
       </footer>
