@@ -468,24 +468,6 @@ export default function Index() {
             ))}
           </div>
 
-          {/* Advantages */}
-          <div className="bg-gray-50 rounded-xl p-6">
-            <div className="text-sm font-semibold text-gray-700 mb-4 text-center">Преимущества онлайн-займов</div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {ADVANTAGES.map((a) => (
-                <div key={a.title} className="bg-green-50 rounded-lg p-4 flex items-start gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-white border border-green-100 flex items-center justify-center flex-shrink-0">
-                    <Icon name={a.icon} size={17} className="text-green-600" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-gray-800">{a.title}</div>
-                    <div className="text-[11px] text-gray-500 mt-0.5">{a.desc}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Important note */}
           <div className="important-block mt-5 flex gap-3 items-start">
             <Icon name="Info" size={16} className="text-green-600 flex-shrink-0 mt-0.5" />
@@ -500,67 +482,30 @@ export default function Index() {
       {/* ══ FAQ ══ */}
       <section id="Вопросы" className="py-12 bg-[#f7f8fa] border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* FAQ list */}
-            <div className="md:col-span-2">
-              <h2 className="text-2xl font-bold text-gray-900 mb-1">Вопросы и ответы</h2>
-              <p className="text-sm text-gray-500 mb-6">Ответы на частые вопросы о займах онлайн</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-1">Вопросы и ответы</h2>
+          <p className="text-sm text-gray-500 mb-6">Ответы на частые вопросы о займах онлайн</p>
 
-              <div className="flex flex-col gap-2">
-                {FAQ_LIST.map((item, i) => (
-                  <div key={i} className="faq-item">
-                    <button
-                      className="w-full flex items-center justify-between px-4 py-3.5 text-left"
-                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    >
-                      <span className="text-sm font-medium text-gray-800 pr-4">{item.q}</span>
-                      <Icon
-                        name={openFaq === i ? "Minus" : "Plus"}
-                        size={16}
-                        className={`flex-shrink-0 transition-colors ${openFaq === i ? "text-green-600" : "text-gray-400"}`}
-                      />
-                    </button>
-                    {openFaq === i && (
-                      <div className="px-4 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
-                        {item.a}
-                      </div>
-                    )}
+          <div className="flex flex-col gap-2">
+            {FAQ_LIST.map((item, i) => (
+              <div key={i} className="faq-item">
+                <button
+                  className="w-full flex items-center justify-between px-4 py-3.5 text-left"
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                >
+                  <span className="text-sm font-medium text-gray-800 pr-4">{item.q}</span>
+                  <Icon
+                    name={openFaq === i ? "Minus" : "Plus"}
+                    size={16}
+                    className={`flex-shrink-0 transition-colors ${openFaq === i ? "text-green-600" : "text-gray-400"}`}
+                  />
+                </button>
+                {openFaq === i && (
+                  <div className="px-4 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
+                    {item.a}
                   </div>
-                ))}
+                )}
               </div>
-            </div>
-
-            {/* Side: important */}
-            <div>
-              <div className="bg-white rounded-xl border border-gray-200 p-5">
-                <div className="flex items-center gap-2 mb-4">
-                  <Icon name="Info" size={16} className="text-green-600" />
-                  <span className="font-semibold text-gray-800 text-sm">Важно знать</span>
-                </div>
-                <ul className="space-y-3">
-                  {[
-                    "Все займы предоставляются лицензированными МФО",
-                    "Мы не выдаём займы и не являемся кредитной организацией",
-                    "Решение зависит только от МФО",
-                    "Перед оформлением внимательно изучите условия договора",
-                  ].map((text, i) => (
-                    <li key={i} className="flex gap-2 text-xs text-gray-600 leading-relaxed">
-                      <Icon name="CheckCircle" size={13} className="text-green-500 flex-shrink-0 mt-0.5" />
-                      {text}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="mt-4 bg-green-50 rounded-xl border border-green-100 p-5">
-                <div className="flex items-center gap-2 mb-3">
-                  <Icon name="HeadphonesIcon" size={16} className="text-green-600" fallback="Phone" />
-                  <span className="font-semibold text-gray-800 text-sm">Не нашли ответ?</span>
-                </div>
-                <p className="text-xs text-gray-600 mb-3">Свяжитесь с нашей поддержкой, мы поможем!</p>
-                <div className="text-xs text-green-700 font-medium">support@zaymy-online.ru</div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -585,17 +530,6 @@ export default function Index() {
             ))}
           </div>
 
-          {/* Mission block */}
-          <div className="bg-gray-50 rounded-xl p-6 text-center border border-gray-100">
-            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-              <Icon name="Target" size={22} className="text-green-600" />
-            </div>
-            <h3 className="font-bold text-gray-900 mb-2">Наша миссия</h3>
-            <p className="text-sm text-gray-600 max-w-lg mx-auto leading-relaxed">
-              Мы помогаем людям находить надёжные финансовые решения быстро, безопасно и удобно.
-              Ваше доверие — наш приоритет.
-            </p>
-          </div>
         </div>
       </section>
 
